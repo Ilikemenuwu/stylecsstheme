@@ -3,19 +3,175 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #18191C; /* Default background color for Discord */
     color: #B9BBBE; /* Default text color */
+    margin: 0;
+    padding: 0;
 }
 
-/* Override some button styles */
+/* Global link styles */
+a {
+    color: #5865F2; /* Blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for buttons */
 .button-1ZxYP3 {
     background-color: #5865F2; /* Blue button color */
     color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 .button-1ZxYP3:hover {
     background-color: #4752C4;
 }
 
-/* Style the navbar */
+/* Style for hoverable buttons */
+.button-1ZxYP3:active {
+    background-color: #3A42A1;
+}
+
+/* Navbar styling */
 .nav-2S8wca {
     background-color: #202225;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-2S8wca a {
+    color: #B9BBBE;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-2S8wca a:hover {
+    background-color: #2E3338;
+}
+
+/* Sidebar styling */
+.sidebar-1Y9w4O {
+    background-color: #2F3136;
+    width: 250px;
+    height: 100vh;
+    color: #B9BBBE;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Chat area styling */
+.chatArea-2Ih7Hi {
+    background-color: #2F3136;
+    flex-grow: 1;
+    padding: 16px;
+    color: #DCDDDE;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message bubble styles */
+.messageBubble-1q2YoC {
+    background-color: #36393F;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 8px 0;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.messageBubble-1q2YoC.author {
+    background-color: #5865F2; /* Author-specific message background */
+    color: white;
+}
+
+/* Customizing the text input field */
+.textInput-12yWyX {
+    background-color: #2F3136;
+    color: #B9BBBE;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.textInput-12yWyX:focus {
+    outline: none;
+    border: 2px solid #5865F2;
+}
+
+/* Notification badges */
+.badge-1g_Mf8 {
+    background-color: #F04747; /* Red notification badge color */
+    color: white;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Dropdown menus */
+.dropdown-2eJH2d {
+    background-color: #2F3136;
+    color: #B9BBBE;
+    border-radius: 4px;
+    padding: 8px;
+    position: relative;
+    min-width: 160px;
+}
+
+.dropdown-2eJH2d:hover {
+    background-color: #40444B;
+}
+
+/* Modal dialog styles */
+.modal-1J_1r6 {
+    background-color: #2F3136;
+    color: #B9BBBE;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    margin: 10% auto;
+    position: relative;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3A3C42;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5C5F66;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2F3136;
+}
+
+/* Discord specific text style for messages */
+.text-2xk_Nz {
+    font-size: 14px;
+    line-height: 20px;
+    color: #DCDDDE;
+}
+
+/* Dark background sections */
+.section-3FqY7B {
+    background-color: #202225;
+    padding: 15px;
+    border-radius: 5px;
 }
