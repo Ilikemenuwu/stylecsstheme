@@ -1,0 +1,21 @@
+/* Base styling for Discord theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #18191C; /* Default background color for Discord */
+    color: #B9BBBE; /* Default text color */
+}
+
+/* Override some button styles */
+.button-1ZxYP3 {
+    background-color: #5865F2; /* Blue button color */
+    color: white;
+}
+
+.button-1ZxYP3:hover {
+    background-color: #4752C4;
+}
+
+/* Style the navbar */
+.nav-2S8wca {
+    background-color: #202225;
+}
